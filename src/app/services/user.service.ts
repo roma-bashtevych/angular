@@ -10,8 +10,7 @@ export class UserService {
 
   private url = 'https://jsonplaceholder.typicode.com/users'
 
-  constructor(private httpClient: HttpClient) {
-    }
+  constructor(private httpClient: HttpClient) { }
   getAllUsers() :Observable<IUser[]>{
     return this.httpClient.get<IUser[]>(this.url)
   }
