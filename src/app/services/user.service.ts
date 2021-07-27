@@ -7,13 +7,7 @@ import {IUser} from "../models/IUser";
   providedIn: 'root'
 })
 export class UserService {
-
-  constructor(private httpClient: HttpClient) {
-
-  }
-
-
-
+  constructor(private httpClient: HttpClient) {}
   getUsers() :Observable<IUser[]> {
    return this.httpClient.get<IUser[]>('https://jsonplaceholder.typicode.com/users')
   }
