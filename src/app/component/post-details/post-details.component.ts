@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from "@angular/router";
-import {IPost} from "../../model/IPost";
+import {Ipost} from "../../model/ipost";
 
 @Component({
   selector: 'app-post-details',
@@ -8,11 +8,11 @@ import {IPost} from "../../model/IPost";
   styleUrls: ['./post-details.component.scss']
 })
 export class PostDetailsComponent implements OnInit {
-post: IPost
+post: Ipost
   constructor(private router: Router) {
     // console.log(history.state)
     // console.log(this.router.getCurrentNavigation()?.extras.state)
-    this.post = this.router.getCurrentNavigation()?.extras.state as IPost
+    this.post = this.router.getCurrentNavigation()?.extras.state as Ipost
   }
 
   ngOnInit(): void {

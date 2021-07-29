@@ -13,6 +13,6 @@ export class PostDiactivService implements CanDeactivate<any>, CanActivate{
     return confirm(`Ви дійсно хочете перейти на ${nextState?.url}`);
   }
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-    return +route.params.id <= 10 && +route.params.id > 0;
+    return +route.params.id <= 100 && +route.params.id > 0;
   }
 }
