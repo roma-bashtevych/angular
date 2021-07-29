@@ -1,0 +1,6 @@
+{{user?.id}}. {{user?.name}}
+<button (click)="goToDetails()">details</button>
+<br>
+<a [routerLink]="['users', user.id]" [state]="user">details</a>
+<br>
+<a routerLink="/users/{{user.id}}" [state]="user">details</a>
