@@ -1,0 +1,23 @@
+<form #tref (ngSubmit)="save(tref)">
+  <input type="text" name="username" [(ngModel)]="user.username">
+  <input type="password" name="pass" [(ngModel)]="user.pass">
+  <input type="checkbox" name="status" [(ngModel)]="user.status">
+
+  <div>
+    <label>
+      <input type="radio" name="gender" value="male" [(ngModel)]="user.gender">
+      <input type="radio" name="gender" value="female" [(ngModel)]="user.gender">
+    </label>
+
+
+    <select name="level" [(ngModel)]="user.level">
+      <option value="junior">junior</option>
+      <option value="middle">middle</option>
+      <option value="senior">senior</option>
+    </select>
+  </div>
+
+
+
+  <button>save</button>
+</form>
