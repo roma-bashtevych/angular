@@ -1,0 +1,24 @@
+
+<form #tref (ngSubmit)="show(tref)">
+  <select name="users" >
+
+    <option *ngFor="let user of users" value="{{user.id}}">{{user.name}}</option>
+
+  </select>
+  <button>show details</button>
+</form>
+
+
+<app-user-details [user]="user"></app-user-details>
+
+<hr>
+
+<form [formGroup]="myForm" (ngSubmit)="showReactUsers()">
+  <select formControlName="usersReactForm">
+    <option *ngFor="let user of users" value="{{user.id}}">{{user.name}}</option>
+  </select>
+  <button>show details</button>
+</form>
+
+
+
