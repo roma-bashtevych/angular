@@ -1,0 +1,11 @@
+.post{
+  border: 3px solid #C4C4C4;
+  padding: 20px;
+  background-color: #000000;
+  &__title{
+color: #888888;
+  }
+  &__text{
+color: #C4C4C4;
+  }
+}

@@ -1,0 +1,22 @@
+.postName{
+  margin-bottom: 30px;
+  width: 950px;
+  display: flex;
+  justify-content: space-between;
+  &__title{
+    font-size: 24px;
+    font-weight: 400;
+    color: #888888;
+  }
+  &__link{
+    background: #C4C4C4;
+    border: 2px solid #C4C4C4;
+    padding: 13px 48px;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: background-color 0.5s ease;
+    &:hover{
+      background-color: #000000;
+    }
+  }
+}
