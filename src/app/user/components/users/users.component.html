@@ -1,0 +1,6 @@
+<pre *ngIf="selectedUser">
+  {{selectedUser | json}}
+</pre>
+<app-user *ngFor="let user of users" [user]="user" (xxx)="catchEE($event)"></app-user>
+
+
